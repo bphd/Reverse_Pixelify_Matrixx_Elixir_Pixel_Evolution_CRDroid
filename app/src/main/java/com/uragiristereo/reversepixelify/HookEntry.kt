@@ -15,6 +15,22 @@ class HookEntry : IYukiHookXposedInit {
 
         val pixelPropsUtilClasses = listOf(
             PixelPropsUtilClass(
+                rom = "EvolutionX",                
+                className = "com.android.internal.util.evolution.PixelPropsUtils",
+                methodName = "setProps",           
+            ),
+            PixelPropsUtilClass(                
+                rom = "CrDroidAndroid",                
+                className = "com.android.internal.util.crdroid.PixelPropsUtils",                
+                methodName = "setProps",                  
+            ),
+            ),
+            PixelPropsUtilClass(
+                rom = "PixelExperience",                
+                className = "com.android.internal.util.custom.PixelPropsUtils",
+                methodName = "setProps",
+            ),
+            PixelPropsUtilClass(
                 rom = "ProjectElixir",
                 className = "com.android.internal.util.derp.PixelPropsUtils",
                 methodName = "setProps",
